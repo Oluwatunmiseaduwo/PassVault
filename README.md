@@ -3,7 +3,8 @@
 This is a secure desktop password manager built with Python and CustomTkinter. 
 It allows users to generate strong passwords, stores credentials in an encrypted file and access the manager through a master password.
 This project was built as a cybersecurity portfolio project to demonstrate 
-secure password generation with encryption, GUI development, and file handling in Python
+secure password generation with encryption, GUI development, and file handling in Python.
+## Note: I am still working on this so if you receive any errors bare with me.
 
 ## Features
 
