@@ -1,3 +1,4 @@
+![Security Scan] (https://github.com/Oluwatunmiseaduwo/PassVault/actions/workflows/bandit.yml/badge.svg)
 # PassVault
 
 This is a secure desktop password manager built with Python and CustomTkinter. 
