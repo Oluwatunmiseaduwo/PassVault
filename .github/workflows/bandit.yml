@@ -1,0 +1,31 @@
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  bandit:
+    name: Bandit Security scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: action/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Bandit
+        run: pip install bandit
+
+      - name: Run Bandit SAST scan
+        run: bandit -r . -11 -f json -o bandt-report.json
+
+      - name: Upload Bandit report
+        if: always()
+        uses: action/upload-artifact@v4
+        with:
+          name: bandit-report

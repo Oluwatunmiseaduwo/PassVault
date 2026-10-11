@@ -31,11 +31,11 @@ secure password generation with encryption, GUI development, and file handling i
 - LoginPage.py: Master password login
 - MainWindow.py: Main application window
 - PasswordGenerator.py: Password generation
-- PasswordChecker.py: Password strength and securoty checks
+- PasswordChecker.py: Password strength and security checks
 - Crypto.py: Handles the encryption and decryption
 - Vault.py: Vault file handling
 
 ## Running the Project
 
-Install the dependendencies for customtkinter, cryptography. Then run App.py
+Install the Dependencies for customtkinter, cryptography. Then run App.py
 
